@@ -1,0 +1,63 @@
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-form,
+.task-item,
+.task-list {
+  margin-bottom: 1rem;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.task-item.completed h4,
+.task-item.completed p {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-item .info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.task-item .actions button {
+  margin-left: 0.5rem;
+}
+
+.error {
+  color: red;
+}
+
+/* Modal styles */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  width: 90%;
+  max-width: 400px;
+}
